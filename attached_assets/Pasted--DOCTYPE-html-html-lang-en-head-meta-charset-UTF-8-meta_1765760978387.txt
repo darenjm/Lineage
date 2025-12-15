@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lineage by Legacy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="px-6 py-12 text-center max-w-3xl mx-auto">
+      <h1 class="text-3xl sm:text-4xl font-bold mb-4">Lineage by Legacy</h1>
+      <p class="text-lg sm:text-xl mb-6">
+        Clinically tested, cryopreserved donor sperm inventory — ready for procurement without the delay of donor recruitment.
+      </p>
+      <a href="#request" class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition">Request Inventory Access</a>
+    </header>
+
+    <section class="px-6 py-12 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-6">Why Lineage</h2>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="bg-white p-6 rounded-xl shadow">✔ Instant access to screened samples</div>
+        <div class="bg-white p-6 rounded-xl shadow">✔ CLIA-certified testing</div>
+        <div class="bg-white p-6 rounded-xl shadow">✔ Tiered inventory by quality</div>
+        <div class="bg-white p-6 rounded-xl shadow">✔ Built by the Legacy team</div>
+      </div>
+    </section>
+
+    <section class="px-6 py-12 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-6">Sample Inventory (Preview)</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left border">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2">Donor</th>
+              <th class="px-4 py-2">Age</th>
+              <th class="px-4 py-2">Blood Type</th>
+              <th class="px-4 py-2">CMV</th>
+              <th class="px-4 py-2">Tier</th>
+              <th class="px-4 py-2">Vials</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="px-4 py-2">LN‑A384</td>
+              <td class="px-4 py-2">27</td>
+              <td class="px-4 py-2">O+</td>
+              <td class="px-4 py-2">Neg</td>
+              <td class="px-4 py-2">Full Profile</td>
+              <td class="px-4 py-2">12</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-2">LN‑B218</td>
+              <td class="px-4 py-2">32</td>
+              <td class="px-4 py-2">A−</td>
+              <td class="px-4 py-2">Pos</td>
+              <td class="px-4 py-2">Standard</td>
+              <td class="px-4 py-2">6</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-2">LN‑C147</td>
+              <td class="px-4 py-2">25</td>
+              <td class="px-4 py-2">B+</td>
+              <td class="px-4 py-2">Neg</td>
+              <td class="px-4 py-2">Limited</td>
+              <td class="px-4 py-2">3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a href="#request" class="inline-block mt-6 bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition">Request Access to Full Inventory</a>
+    </section>
+
+    <section class="px-6 py-12 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-4">Pricing Framework</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><strong>Access Fee:</strong> Required for verified institutions</li>
+        <li><strong>Per-Sample Pricing:</strong> Based on tier and quality</li>
+        <li><strong>Volume Discounts:</strong> Bulk & repeat pricing available</li>
+        <li><strong>Exclusivity Options:</strong> By donor or region</li>
+      </ul>
+      <a href="#request" class="inline-block mt-6 bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition">Request Pricing & Info Packet</a>
+    </section>
+
+    <section id="request" class="px-6 py-12 max-w-md mx-auto">
+      <h2 class="text-2xl font-semibold mb-4">Ready to explore the inventory?</h2>
+      <p class="mb-6">Submit your institution info. We’ll follow up in 1–2 business days.</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="bg-white p-6 rounded-xl shadow space-y-4">
+        <div>
+          <label class="block font-medium mb-1" for="name">Your Name</label>
+          <input class="w-full border border-gray-300 rounded-lg p-3" type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label class="block font-medium mb-1" for="institution">Institution Name</label>
+          <input class="w-full border border-gray-300 rounded-lg p-3" type="text" id="institution" name="institution" />
+        </div>
+        <div>
+          <label class="block font-medium mb-1" for="email">Work Email</label>
+          <input class="w-full border border-gray-300 rounded-lg p-3" type="email" id="email" name="email" required />
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-xl hover:bg-blue-700 transition">Request a Consultation</button>
+      </form>
+    </section>
+
+    <footer class="text-center text-sm text-gray-500 mt-12 pb-6">
+      Lineage by Legacy — Boston, NYC, Remote<br />
+      lineage@givelegacy.com
+    </footer>
+  </body>
+</html>
